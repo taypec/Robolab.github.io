@@ -1,0 +1,333 @@
+/* Reset de estilos básicos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e9ecef; /* Fondo claro */
+    color: #343a40; /* Texto gris oscuro */
+}
+
+/* Encabezado */
+header {
+    background-color: #004085; /* Azul oscuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffc107; /* Color dorado al pasar el mouse */
+}
+
+/* Estilo para el logo */
+#logo {
+    max-width: 150px; /* Ajusta el tamaño máximo del logo según tus preferencias */
+    height: auto; /* Mantiene la proporción del logo */
+    margin: 10px 0; /* Espacio arriba y abajo del logo */
+    border-radius: 15px; /* Bordes redondeados solo para el logo */
+}
+
+/* Sección de productos */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    background: #ffffff; /* Fondo blanco */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Efecto suave */
+    width: 250px; /* Tamaño fijo para los productos */
+}
+
+.producto:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+}
+
+/* Estilo para las imágenes */
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Botones */
+button {
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px; /* Espacio arriba del botón */
+    display: block; /* Para centrar el botón */
+    margin-left: auto; /* Para centrar el botón horizontalmente */
+    margin-right: auto; /* Para centrar el botón horizontalmente */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Sección del carrito */
+#carrito {
+    background: #ffffff; /* Fondo blanco */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    padding: 5px 0;
+}
+
+/* Estilo para el total */
+#total {
+    font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    #productos {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%; /* Productos ocupan el 90% del ancho */
+    }
+}
+/* Estilo para la sección "Nosotros" */
+#nosotros {
+    height: 500px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#nosotros h2 {
+    font-size: 2em;
+    color: #343a40;
+}
+
+#nosotros p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 600px;
+}
+/* Estilos para la sección Nosotros */
+#nosotros {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+    color: #343a40;
+}
+
+#nosotros h2 {
+    font-size: 2em;
+    color: #004085; /* Color azul oscuro del encabezado */
+    margin-bottom: 10px;
+}
+
+#nosotros p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #555;
+}
+
+/* Contenedor de misión */
+.mision {
+    background-color: #e9ecef; /* Fondo claro */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mision h3 {
+    color: #004085; /* Azul oscuro */
+    margin-bottom: 10px;
+}
+
+.mision p {
+    color: #343a40;
+    font-size: 1em;
+}
+
+/* Contenedor de equipo */
+.equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.miembro-equipo {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.miembro-equipo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.miembro-equipo img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.miembro-equipo h4 {
+    font-size: 1.1em;
+    color: #343a40;
+}
+
+.miembro-equipo p {
+    font-size: 0.9em;
+    color: #555;
+}
+/* Estilos para la sección Soporte */
+#soporte {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+    color: #343a40;
+}
+
+#soporte h2 {
+    font-size: 2em;
+    color: #004085;
+    margin-bottom: 10px;
+}
+
+#soporte p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Estilos para el formulario */
+#form-soporte {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#form-soporte label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#form-soporte input,
+#form-soporte textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#form-soporte button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#form-soporte button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para el video flotante */
+#video-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Se coloca encima de otros elementos */
+}
+
+#video-flotante video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de cerrar */
+#cerrar-video {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cerrar-video:hover {
+    background: #cc0000;
+}

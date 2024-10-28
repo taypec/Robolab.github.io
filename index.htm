@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda en linea</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Encabezado de la pagina-->
+        <header>
+            <h1>RoboLab</h1>
+            <img src="imagenes/logo-robolab.jpeg" alt="Logo de RoboLab" id="logo"> 
+            <nav>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#productos">Productos</a>
+                <a href="#soporte">Soporte</a> 
+            </nav>
+        </header>
+        <!-- Sección "Nosotros" -->
+<section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>En RoboLab, nos apasiona desarrollar dispositivos innovadores que faciliten el cuidado de tus mascotas. Conoce más sobre nuestro equipo y nuestra misión.</p>
+    
+    <!-- Contenedor de misión -->
+    <div class="mision">
+        <h3>Nuestra Misión</h3>
+        <p>Proveer soluciones tecnológicas avanzadas para el bienestar de tus mascotas, combinando diseño innovador con funcionalidad.</p>
+    </div>
+    
+    <!-- Contenedor de equipo -->
+    <div class="equipo">
+        <h3>Conoce a Nuestro Equipo</h3>
+        
+        <!-- Tarjetas del equipo -->
+        <div class="miembro-equipo">
+            <img src="imagenes/miembro1.jpg" alt="Miembro 1">
+            <h4>Taype Cristian</h4>
+            <p>Fundador y CEO</p>
+        </div>
+        <div class="miembro-equipo">
+            <img src="imagenes/miembro2.jpg" alt="Miembro 2">
+            <h4>Silva Nataly</h4>
+            <p>Directora de Tecnología</p>
+        </div>
+        <div class="miembro-equipo">
+            <img src="imagenes/miembro3.jpg" alt="Miembro 3">
+            <h4>Sifuentes Maria</h4>
+            <p>Jefe de Diseño</p>
+        </div>
+    </div>
+</section>
+        <!--Seccion de productos-->
+        <section id="productos">
+            <div class="producto">
+                <h3>Comedero grande</h3>
+                <p>Dispositivo para alimentar mascotas automaticamente</p>
+                <span class="precio">$50.00</span>
+                <button class="add-to-cart" data-precio="50.00">Añadir al carrito</button>
+                <img src="imagenes/comedero-1.jpg" alt="comedero-1" width="250" height="250">
+            </div>
+            <div class="producto">
+                <h3>Comedero mediano</h3>
+                <p>Un comedero de mascotas mas sotisficado pero mediano</p>
+                <span class="precio">$32.00</span>
+                <button class="add-to-cart" data-precio="32.00">Añadir al carrito</button>
+                <img src="imagenes/comedero-2.jpg" alt="comedero-2" width="250" height="250">
+            </div>
+            <div class="producto">
+                <h3>Comedero pequeño</h3>
+                <p>Comedero de un tamaño pequeño pero funcional y sencillo</p>
+                <span class="precio">$27.00</span>
+                <button class="add-to-cart" data-precio="27.00">Añadir al carrito</button>
+                <img src="imagenes/comedero-3.png" alt="comedero-3" width="250" height="250">
+            </div>
+        </section>
+        <!--Seccion del carrito-->
+        <section id="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="lista-carrito">
+                <!--Aqui se agregaran los productos-->  
+            </ul>
+            <p>Total:$<span id="total">0.00</span></p>
+            <button id="comprar">Comprar</button>
+        </section>
+        <!-- Sección Soporte -->
+<section id="soporte">
+    <h2>Soporte</h2>
+    <p>¿Tienes alguna duda o problema? Completa el formulario y nos pondremos en contacto contigo.</p>
+    <form id="form-soporte">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+            <!-- Video flotante en la esquina -->
+<div id="video-flotante">
+    <video controls>
+        <source src="videos/tu-video.mp4" type="video/mp4">
+    </video>
+    <button id="cerrar-video">X</button>
+<script src="script.js"></script>
+    </body>
+</html>
